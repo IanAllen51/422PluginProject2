@@ -21,8 +21,8 @@ class JunitNumberOperandsTest {
 		// Build File
 		String filePath = "src/main/java/CategoryB/";
 		//String filePath = "src/CategoryB/";
-		File file = new File(filePath + "numberOperandsCheck.java");
-		//File file = new File(filePath + "testClass.java");
+		//File file = new File(filePath + "numberOperandsCheck.java");
+		File file = new File(filePath + "testOp.java");
 		FileText ft = new FileText(file,"UTF-8");
 		FileContents fc = new FileContents(ft);
 		
@@ -55,7 +55,7 @@ class JunitNumberOperandsTest {
 		
 		// Verify Results
 		
-		assertEquals(102,results);
+		assertEquals(5,results);
 		System.out.println("numberOperands Done!");
 	}
 	

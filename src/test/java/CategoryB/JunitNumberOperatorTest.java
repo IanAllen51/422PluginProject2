@@ -22,7 +22,7 @@ class JunitNumberOperatorTest {
 		String filePath = "src/main/java/CategoryB/";
 		//String filePath = "src/CategoryB/";
 		File file = new File(filePath + "numberOperatorCheck.java");
-		//File file = new File(filePath + "testClass.java");
+		//File file = new File(filePath + "testOp.java");
 		FileText ft = new FileText(file,"UTF-8");
 		FileContents fc = new FileContents(ft);
 		

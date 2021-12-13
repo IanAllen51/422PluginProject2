@@ -21,7 +21,8 @@ class JunitLoopingTest {
 		// Build File
 		String filePath = "src/main/java/CategoryB/";
 		//String filePath = "src/CategoryB/";
-		File file = new File(filePath + "numberLoopStateCheck.java");
+		//File file = new File(filePath + "numberLoopStateCheck.java");
+		File file = new File(filePath + "testLoop.java");
 		FileText ft = new FileText(file,"UTF-8");
 		FileContents fc = new FileContents(ft);
 		
@@ -53,7 +54,7 @@ class JunitLoopingTest {
 		
 		// Verify Results
 		
-		assertEquals(0,results);
+		assertEquals(2,results);
 		System.out.println("LoopingCheck Done!");
 	}
 	

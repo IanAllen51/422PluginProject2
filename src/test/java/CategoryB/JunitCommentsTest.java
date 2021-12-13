@@ -21,8 +21,8 @@ class JunitCommentsTest {
 		// Build File
 		String filePath = "src/main/java/CategoryB/";
 		//String filePath = "src/CategoryB/";
-		File file = new File(filePath + "numberComLinesCheck.java");
-		//File file = new File(filePath + "testClass.java");
+		//File file = new File(filePath + "numberComLinesCheck.java");
+		File file = new File(filePath + "testClass.java");
 		FileText ft = new FileText(file,"UTF-8");
 		FileContents fc = new FileContents(ft);
 		

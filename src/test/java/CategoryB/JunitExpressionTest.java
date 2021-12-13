@@ -22,7 +22,7 @@ class JunitExpressionTest {
 		String filePath = "src/main/java/CategoryB/";
 		//String filePath = "src/CategoryB/";
 		File file = new File(filePath + "numberExpressionCheck.java");
-		//File file = new File(filePath + "testClass.java");
+		//File file = new File(filePath + "testExpression.java");
 		FileText ft = new FileText(file,"UTF-8");
 		FileContents fc = new FileContents(ft);
 		
@@ -64,6 +64,7 @@ class JunitExpressionTest {
 			b.visitToken(a);
 			helper(b,a.getFirstChild());
 			a = a.getNextSibling();
+			System.out.println(a);
 		}
 	}
 }
