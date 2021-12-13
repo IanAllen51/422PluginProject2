@@ -30,22 +30,22 @@ BlackBox Testing Fault Models:
   CategoryB:
     numberComments:
       // //
-      check to see if test will pick up a commented comment
+      check to see if test will pick up a commented comment.
     numberCommentLines:
       /* */
-      check to see if test will return single comment
+      check to see if test will return single comment.
     looping:
       while()
       {
-        if(){}
+        while(){}
       }
-      check internal loop is picked up
+      check internal loop is picked up.
     Expressions:
-      ((3+4)+((3+4)-(3+4)))
-      check that expression reads internal expressions
+      ((3+4)+((3+4)-(3+4))).
+      check that expression reads internal expressions.
     Operand/Operator
-      a = -2+3
-      check both that -2 is not - 2
+      a = -2+3.
+      check both that -2 is not - 2.
 
 NOTE:TESTED POST WHITEBOX      
 Results of blackbox testing for CategoryB. Testing for category a resulted in passing tests for all tests except for the Operator check. The check returns - 2 vs -2.
@@ -59,6 +59,8 @@ Looking into PIT Summary, i was able to discover that a large portion of the sur
 
 Because i had achieved full coverage excluding the log() function, i did not write any additional tests.
 
-Class Testing:
+Additional Files included are Mock3 and PitTest. Mock3 includes a screenshot of running my Engine for commentLines reading a test file and displaying the passing output. PitTest contains three screenshots showing the line and mutation coverage before any tests, after creating the testengine and slight modifications, and post whitebox alterations post engine modifications.
 
+Class Testing:
+By applying class testing to the Deliverable3, there could potentially be a reduction in the number of tests required. In the case of the halstead checks, many checks are built upon other halsteadcheck values, ex. Effort = Difficulty * Volume. In this case, By testing Effort, we will need to also run Difficulty and Volume. Class Testing will only slightly minimize the Bchecks. By testing the number of comments lines in a program, you will be counting the number of comments, however the code may need to be altered slightly to achieve this result. The fact that inheritance is not used between the different checks will help minimize the number of tests required, as there will not be expanded iteration that need to be tested.
 
